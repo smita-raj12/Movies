@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Movies</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+ 
+  <script src="js/scripts.js"></script>
+</head>
+
+  <body>
+    <h1>Movies</h1>
+    <div class="container">
+      <h2>Select which type of movies you want</h2>
+      <form id="formmovie">
+        <div class="form-group">
+          <label for="name">Enter your name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="age">Enter your age:</label>
+          <input id="age" class="form-control" type="text">
+        </div>
+      </form>
+     
+      
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="Kids" checked>
+          Kids based Movies
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="Horror">
+          Horror Movies
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="Family">
+          Family based movies
+        </label>
+      </div>        
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="International">
+          International Movies
+        </label>
+      </div>        
+      <button type="submit" class="btn">Go!</button>
+    </form>
+  </div>
+   <div id="kid">
+     <h2>Here You Go List of Kids movies</h2>
+  </div>
+  <div id="horror">
+    <h2>Here You Go List of Kids movies</h2>
+ </div>
+ <div id="family">
+  <h2>Here You Go List of Kids movies</h2>
+</div>
+<div id="international">
+  <h2>Here You Go List of Kids movies</h2>
+</div>
+</body>
+</html>
