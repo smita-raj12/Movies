@@ -10,3 +10,10 @@
 #international{
   display: none;
 }
+h1{
+  text-align: center;
+  color: brown;
+}
+body{
+  background-color: burlywood;
+}

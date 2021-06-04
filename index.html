@@ -12,55 +12,102 @@
   <body>
     <h1>Movies</h1>
     <div class="container">
-      <h2>Select which type of movies you want</h2>
       <form id="formmovie">
-        <div class="form-group">
-          <label for="name">Enter your name:</label>
-          <input id="name" class="form-control" type="text">
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="name">Enter your name:</label>
+              <input id="name" class="form-control" type="text">
+            </div>
         </div>
-        <div class="form-group">
-          <label for="age">Enter your age:</label>
-          <input id="age" class="form-control" type="text">
         </div>
-      </form>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="Kids" checked>
-          Kids based Movies
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="Horror">
-          Horror Movies
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="Family">
-          Family based movies
-        </label>
-      </div>        
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="International">
-          International Movies
-        </label>
-      </div>        
+        <div class="col-4">
+          <div class="form-group">
+            <label for="age">Enter your age:</label>
+            <input id="age" class="form-control" type="text">
+          </div>
+        </div>  
+        <h2>Select which type of movies you want</h2>
+        <div class="radio">
+
+          <label>
+            <input type="radio" name="operator" value="Kids" checked>
+            Kids based Movies
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="Horror">
+            Horror Movies
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="Family">
+            Family based movies
+          </label>
+        </div>        
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="International">
+            International Movies
+          </label>
+        </div>        
       <button type="submit" class="btn">Go!</button>
     </form>
   </div>
+  
   <div id="kid">
-    <h2>Here You Go List of Kids movies</h2>
+    <div class="row row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">
+              <h2>Here You Go List of Kids movies</h2>
+            </p> 
+          </div>
+        </div>
+      </div>
+    </div>  
+<div id="horror">
+  <div class="row row justify-content-center">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">
+            <h2>Here You Go List of Horror movies</h2>
+          </p> 
+        </div>
+      </div>
+    </div>  
   </div>
-  <div id="horror">
-    <h2>Here You Go List of Kids movies</h2>
- </div>
- <div id="family">
-  <h2>Here You Go List of Kids movies</h2>
-</div>
+</div>  
+
+<div id="family">
+  <div class="row row justify-content-center">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">
+            <h2>Here You Go List of Family Entertainment  movies</h2>
+          </p>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>        
 <div id="international">
-  <h2>Here You Go List of Kids movies</h2>
+  <div class="row row justify-content-center">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">
+              <h2>Here You Go List of International movies</h2>
+          </p>
+        </div>
+      </div>
+    </div> 
+  </div>           
 </div>
 </body>
 </html>

@@ -1,8 +1,10 @@
 $(document).ready(function() {
   $("#formmovie").submit(function(event) {
-    event.preventDefault();
+    $("#formmovie").hide();
     const nameInput = $("#name").val();
     const ageInput = $("#age").val();
+    console.log("test")
+    //console.log($("input:radio[name=operator]:checked").val())
     const operator = $("input:radio[name=operator]:checked").val();
       if (operator === "Kids") {
         $("#kid").show()
@@ -13,6 +15,6 @@ $(document).ready(function() {
       }else if (operator === "International") {
         $("#international").show()
       }
-    
+      event.preventDefault();
   });
 });
